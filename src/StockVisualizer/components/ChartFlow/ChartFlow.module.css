@@ -1,5 +1,6 @@
 .chart {
-    padding: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;

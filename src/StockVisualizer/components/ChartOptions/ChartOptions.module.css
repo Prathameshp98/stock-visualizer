@@ -1,0 +1,19 @@
+
+.options {
+    display: flex;
+    gap: 30px;
+}
+
+.options .option {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.options .option p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #6F7177;
+    margin: 0;
+}

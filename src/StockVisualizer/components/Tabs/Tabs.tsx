@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import styles from './Tabs.module.css';
 import TabsProps from './Tabs.d';
+import { TAB_OPTIONS } from '../../constants/constants';
 
-const tabs = ['Summary', 'Chart', 'Statistics', 'Analysis', 'Settings'];
 
 const Tabs = ({
   getSelectedTab
 }: TabsProps) => {
-  const [activeTab, setActiveTab] = useState(tabs[0]);
+  const [activeTab, setActiveTab] = useState(TAB_OPTIONS[0]);
 
   const handleTabSelection = (tab: string) => {
     setActiveTab(tab);
@@ -25,7 +25,7 @@ const Tabs = ({
   return (
     <div className={styles.container}>
       <div className={styles.tabs}>
-        {tabs.map((tab) => (
+        {TAB_OPTIONS.map((tab) => (
           <div
             key={tab}
             className={`${styles.tab} ${activeTab === tab ? styles.active : ''}`}
