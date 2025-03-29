@@ -7,7 +7,17 @@ export const TAB_OPTIONS = [
     'Statistics', 
     'Analysis', 
     'Settings'
-]
+];
+
+export const TAB_DURATIONS_OPTIONS = [
+    '1d',
+    '3d',
+    '1w',
+    '1m',
+    '6m',
+    '1y',
+    'max'
+];
 
 export const CHART_OPTIONS = [
     {

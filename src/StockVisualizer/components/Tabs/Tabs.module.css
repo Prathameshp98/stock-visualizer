@@ -4,10 +4,18 @@
     padding-left: 50px;
 }
 
+.buttonContainer {
+    border-bottom: none !important;
+}
+
 .tabs {
     display: flex;
     justify-content: flex-start;
     gap: 24px;
+}
+
+.buttonTabs {
+    gap: 10px !important;
 }
 
 .tab {
@@ -16,16 +24,25 @@
     color: #6F7177;
     cursor: pointer;
     padding: 8px 12px;
-    transition: color 0.5s ease-in-out;
     position: relative;
 }
 
-.tab:hover {
+.lineTab {
+    transition: color 0.5s ease-in-out;
+}
+
+.lineTab:hover {
     color: #1A243A;
 }
 
-.active {
+.lineTab.active {
     font-weight: 600;
     color: #1e1e1e;
     border-bottom: 3px solid #4B40EE;
+}
+
+.buttonTab.active {
+    background-color: #4B40EE;
+    color: white;
+    border-radius: 5px;
 }
