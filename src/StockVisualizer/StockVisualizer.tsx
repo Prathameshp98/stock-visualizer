@@ -1,5 +1,5 @@
 
-import { PriceCard, Tabs } from "./components";
+import { PriceCard, Tabs, ChartFlow } from "./components";
 import styles from './StockVisualizer.module.css';
 
 const StockVisualizer = () => {
@@ -11,9 +11,8 @@ const StockVisualizer = () => {
             percentage={-3.54}
             currency="USD"
         />
-        <Tabs 
-            getSelectedTab={(tab) => console.log(tab)}
-        />
+        <Tabs getSelectedTab={(tab) => console.log(tab)} />
+        <ChartFlow />
     </div>
   );
 }
