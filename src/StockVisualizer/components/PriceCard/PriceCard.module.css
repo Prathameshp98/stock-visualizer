@@ -1,0 +1,38 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+.price {
+    font-size: 70px;
+    font-weight: 500;
+    color: #1A243A;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    line-height: 100%;
+}
+  
+.currency {
+    font-size: 24px;
+    font-weight: 500;
+    color: #BDBEBF;
+    margin-left: 4px;
+    margin-top: -13px;
+}
+  
+.change {
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+  
+.positive {
+    color: #67BF6B;
+}
+  
+.negative {
+    color: #dc2626;
+}
+  
