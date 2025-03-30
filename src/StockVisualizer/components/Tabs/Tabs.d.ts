@@ -1,7 +1,10 @@
 
 export default interface TabsProps {
-    options: string[];
+    options: {
+        id: number;
+        name: string;
+    }[];
     type: 'line' | 'button';
-    activeTab: string;
-    setActiveTab: (tab: string) => void;
+    activeTab: number;
+    setActiveTab: (tab: number) => void;
 }

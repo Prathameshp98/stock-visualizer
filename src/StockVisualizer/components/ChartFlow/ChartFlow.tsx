@@ -6,7 +6,7 @@ import Tabs from '../Tabs/Tabs';
 import { TAB_DURATIONS_OPTIONS } from '../../constants/constants';
 
 const ChartFlow = () => {
-    const [activeTab, setActiveTab] = useState(TAB_DURATIONS_OPTIONS[0]);
+    const [activeTab, setActiveTab] = useState<number>(TAB_DURATIONS_OPTIONS[0].id);
 
     return (
         <div className={styles.chart}>

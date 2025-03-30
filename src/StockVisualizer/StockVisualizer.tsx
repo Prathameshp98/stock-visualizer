@@ -5,7 +5,7 @@ import { PriceCard, Tabs, ChartFlow } from "./components";
 import { TAB_OPTIONS } from './constants/constants';
 
 const StockVisualizer = () => {
-    const [activeTab, setActiveTab] = useState(TAB_OPTIONS[0]);
+    const [activeTab, setActiveTab] = useState<number>(TAB_OPTIONS[0].id);
 
     return (
         <div className={styles.container}>
