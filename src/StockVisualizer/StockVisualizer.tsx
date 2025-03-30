@@ -21,7 +21,7 @@ const StockVisualizer = () => {
                 activeTab={activeTab}
                 setActiveTab={setActiveTab}
             />
-            <ChartFlow />
+            {activeTab === 2 ? <ChartFlow /> : <div className={styles.comingSoon}>Coming Soon</div>}
         </div>
     );
 }
