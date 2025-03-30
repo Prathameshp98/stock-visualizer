@@ -1,6 +1,7 @@
 
 export default interface TabsProps {
-    getSelectedTab: (tab: string) => void;
     options: string[];
-    type: 'line' | 'button' 
+    type: 'line' | 'button';
+    activeTab: string;
+    setActiveTab: (tab: string) => void;
 }

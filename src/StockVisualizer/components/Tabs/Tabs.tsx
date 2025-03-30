@@ -1,13 +1,13 @@
-import { useState } from 'react';
 import styles from './Tabs.module.css';
 import TabsProps from './Tabs.d';
 
 const Tabs = ({
-  getSelectedTab,
   options,
-  type
+  type,
+  activeTab,
+  setActiveTab
 }: TabsProps) => {
-  const [activeTab, setActiveTab] = useState(options[0]);
+  
   const containerClass = `${styles.container} ${type == 'button' && styles.buttonContainer}`;
   const tabsClass = `${styles.tabs} ${type == 'button' && styles.buttonTabs}`
 
@@ -17,11 +17,9 @@ const Tabs = ({
     ${activeTab === tab ? styles.active : ''}
   `;
 
+
   const handleTabSelection = (tab: string) => {
     setActiveTab(tab);
-    if (getSelectedTab) {
-      getSelectedTab(tab);
-    }
   };
   
   const handleTabSelectionWithKey = (e: React.KeyboardEvent, tab: string) => {
