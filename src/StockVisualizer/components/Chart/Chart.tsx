@@ -8,9 +8,11 @@ import {
     ReferenceDot,
     Area,
 } from 'recharts';
-import CustomTooltip from './CustomTooltip';
-import CustomCursor from './CustomCursor';
-import CustomLabel from './CustomLabel';
+import { 
+    CustomCursor,
+    CustomLabel,
+    CustomTooltip
+} from './components';
 
 const Chart = ({
     chartData
@@ -82,7 +84,6 @@ const Chart = ({
                         }
                     />
                 </ReferenceDot>
-        
             </LineChart>
         </ResponsiveContainer>
     );
