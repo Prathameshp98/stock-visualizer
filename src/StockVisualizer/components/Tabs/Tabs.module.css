@@ -30,7 +30,8 @@
     transition: color 0.5s ease-in-out;
 }
 
-.lineTab:hover {
+.lineTab:hover,
+.buttonTab:hover {
     color: #1A243A;
 }
 
