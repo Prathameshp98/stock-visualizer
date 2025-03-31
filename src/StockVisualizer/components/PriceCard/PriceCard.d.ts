@@ -1,7 +1,9 @@
 
 export default interface PriceCardProps {
-    price: number;
-    change: number;
-    percentage: number;
+    cardData: {
+      current_price: number;
+      price_change: number;
+      percentage_change: number;
+    }
     currency?: string;
   }

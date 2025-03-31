@@ -18,7 +18,6 @@ export const TAB_DURATIONS_OPTIONS = [
     { id: 6, name: '1y' },
     { id: 7, name: 'max' },
 ];
-  
 
 export const CHART_OPTIONS = [
     {
