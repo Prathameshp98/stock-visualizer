@@ -18,8 +18,6 @@ const StockVisualizer = () => {
         }
     }
 
-    console.log(durationData)
-
     return (
         <div className={styles.container}>
             <PriceCard 

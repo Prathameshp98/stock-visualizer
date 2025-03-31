@@ -1,30 +1,37 @@
 
+import { CSSProperties } from 'react';
 
-const CustomCursor = ({ 
-    points,
-}: { 
-    points?: { x: number; y: number }[] 
-}) => {
-    if (!points || points.length === 0) {
-        return null;
-    }
-
-    const { x, y } = points[0];
-
-    return (
-        <>
-            {/* Vertical Line */}
-            <line
-                x1={x}
-                x2={x}
-                y1={0}
-                y2={300} 
-                stroke="#6F7177"
-                strokeDasharray="6 6"
-                strokeWidth={1}
-            />
-        </>
-    );
+const labelStyle: CSSProperties = { 
+  backgroundColor: '#4f46e5',
+  color: '#fff',
+  padding: '5px 0px',
+  borderRadius: '5px',
+  fontSize: '18px',
+  fontWeight: '500',
+  textAlign: 'center', 
 };
 
-export default CustomCursor;
+const CustomLabel = ({
+  x,
+  y,
+  value,
+}: {
+  x?: number;
+  y?: number;
+  value?: number | string;
+}) => {
+  if (!x || !y || value === undefined) return null;
+
+  return (
+    <foreignObject
+      x={x}
+      y={200 - y}
+      width={value.toString().length * 10 + 40}
+      height={32}
+    >
+      <div style={labelStyle}>${value}</div>
+    </foreignObject>
+  );
+};
+
+export default CustomLabel;
